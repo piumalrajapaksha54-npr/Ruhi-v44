@@ -1,0 +1,15 @@
+{
+  "name": "ruhi-mobile-v44",
+  "version": "44.0.0",
+  "private": true,
+  "description": "Ruhi Mobile business manager V42 with purchase multi-item, repair jobs and audit improvements",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "pg": "^8.16.3"
+  }
+}

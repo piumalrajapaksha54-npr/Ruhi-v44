@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111827">
+<title>Ruhi Mobile</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css?v=44">
+</head>
+<body>
+<div class="app">
+  <aside>
+    <h1>Ruhi Mobile</h1>
+    <p class="muted">Business Manager</p>
+    <nav>
+      <button class="nav active" data-page="dashboard">🏠 Dashboard</button>
+      <button class="nav" data-page="sales">🛒 Sales</button><button class="nav" data-page="purchases">📥 Purchases</button>
+      <button class="nav" data-page="stock">📦 Stock</button><button class="nav" data-page="addItem">➕ Add Item</button><button class="nav" data-page="stockAdjustment">🛠️ Stock Adjustment</button>
+      <button class="nav" data-page="customers">👥 Customers</button><button class="nav" data-page="suppliers">🚚 Suppliers</button><button class="nav" data-page="returns">↩️ Returns</button><button class="nav" data-page="accounts">💵 Cash Accounts</button>
+      <button class="nav" data-page="repairs">🔧 Repairs</button><button class="nav" data-page="myReport">🧾 My Daily Report</button>
+      <button class="nav" data-page="expenses">💰 Expenses</button>
+      <button class="nav" data-page="reports">📊 Reports</button><button class="nav" data-page="settings">⚙️ Settings</button>
+    <button class="nav" data-page="users">👤 Users</button><button class="nav" data-page="backup">☁️ Backup & Sync</button></nav>
+  </aside>
+  <main>
+    <header><div><b id="pageTitle">Dashboard</b><span id="online" class="status">Checking…</span></div><div><button id="globalExportData" class="secondary" style="display:none" onclick="exportData()">⬇ Download Data</button> <button id="syncBtn" class="secondary">↻ Sync</button> <button id="authBtn" class="secondary">Login</button> <button id="install" hidden>Install App</button></div></header>
+    <section id="content"></section>
+  </main>
+</div>
+<script src="app.js?v=44"></script><script>if("serviceWorker" in navigator) navigator.serviceWorker.register("service-worker.js?v=44");</script>
+</body>
+</html>

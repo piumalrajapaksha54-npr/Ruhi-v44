@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ruhi-mobile
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+    disk:
+      name: ruhi-mobile-data
+      mountPath: /app/server-data
+      sizeGB: 1
